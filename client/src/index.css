@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type='tel'] {
+  @apply w-full border my-2 py-2 px-5 rounded-full;
+}
+
+textarea {
+  width: 92vw;
+  height: 15vh;
+  padding: 1%;
+}
+
+button.logout {
+  background-color: #89ecda;
+  @apply bg-primary transition ease-in-out p-2 w-full text-white rounded-full;
+  @apply hover:bg-red-600;
+}
+
+button.primary {
+  background-color: #89ecda;
+  @apply bg-primary transition ease-in-out p-2 w-full text-white rounded-full;
+  @apply hover:bg-hover;
+}
+
+* {
+  @apply font-semibold;
+}
