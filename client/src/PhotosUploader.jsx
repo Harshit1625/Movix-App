@@ -73,7 +73,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
               <img
                 className="rounded-md w-full object-cover position-center mt-2"
                 src={
-                  "https://travel-booking-app-so1m.onrender.com/uploads/" + link
+                  "https://travel-booking-app-qa3o.onrender.com/uploads/" + link
                 }
                 alt={link}
               />

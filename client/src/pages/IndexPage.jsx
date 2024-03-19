@@ -55,7 +55,7 @@ const IndexPage = () => {
                   {place.photos?.[0] && (
                     <img
                       src={
-                        "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                        "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                         place.photos[0]
                       }
                       alt="preview-image"

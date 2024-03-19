@@ -78,7 +78,7 @@ const PlaceDetailsPage = () => {
                   <img
                     className=" w-[100vw] h-[80vh] object-cover"
                     src={
-                      "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                      "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                       photo
                     }
                     alt=""
@@ -164,7 +164,7 @@ const PlaceDetailsPage = () => {
                   <img
                     className="aspect-square object-cover mt-1 rounded-l-2xl lg:h-[127vh] w-[100vw]"
                     src={
-                      "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                      "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                       place?.photos?.[0]
                     }
                     alt=""
@@ -177,7 +177,7 @@ const PlaceDetailsPage = () => {
                 <img
                   className="aspect-square object-cover rounded-tr-2xl"
                   src={
-                    "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                    "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                     place?.photos?.[1]
                   }
                   alt=""
@@ -187,7 +187,7 @@ const PlaceDetailsPage = () => {
                 <img
                   className="mt-1 aspect-square object-cover rounded-br-2xl"
                   src={
-                    "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                    "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                     place?.photos?.[2]
                   }
                   alt=""

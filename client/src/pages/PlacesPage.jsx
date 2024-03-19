@@ -69,7 +69,7 @@ const PlacesPage = () => {
                       <img
                         className="object-cover w-[80vw] lg:h-[30vh] lg:w-[30vw] lg:object-cover"
                         src={
-                          "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                          "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                           place.photos[0]
                         }
                         alt="preview"

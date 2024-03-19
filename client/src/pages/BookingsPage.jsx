@@ -65,7 +65,7 @@ const BookingsPage = () => {
                 <img
                   className="object-cover lg:w-64 lg:h-64"
                   src={
-                    "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                    "https://travel-booking-app-qa3o.onrender.com/uploads/" +
                     booking.place.photos[0]
                   }
                   alt="preview"
