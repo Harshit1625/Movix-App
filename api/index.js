@@ -28,7 +28,8 @@ app.use(cookieParser());
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: "https://travelbooking-app.netlify.app/",
   })
 );
 
@@ -151,7 +152,6 @@ app.post("/places", (req, res) => {
 
   const addressF = address.toLowerCase();
 
-
   console.log(photos);
 
   jwt.verify(token, jwtSecret, {}, async (err, userData) => {
@@ -160,7 +160,7 @@ app.post("/places", (req, res) => {
       owner: userData.id,
       price,
       title,
-      address : addressF,
+      address: addressF,
       photos,
       description,
       perks,
@@ -288,11 +288,11 @@ app.post("/delete-booking", async (req, res) => {
 
 app.get("/search-place/:name", async (req, res) => {
   const { name } = req.params;
-  console.log("param" + name)
+  console.log("param" + name);
   const nameF = name.toLowerCase();
-  const doc = await Place.find({ address : nameF });
-  console.log(doc)
-  res.json(doc)
+  const doc = await Place.find({ address: nameF });
+  console.log(doc);
+  res.json(doc);
 });
 
 app.listen(4000, console.log("Server Instantiated"));

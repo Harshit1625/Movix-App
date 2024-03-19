@@ -54,7 +54,10 @@ const IndexPage = () => {
                 <div className="bg-gray-500 rounded-2xl flex aspect-square object-cover">
                   {place.photos?.[0] && (
                     <img
-                      src={"http://localhost:4000/uploads/" + place.photos[0]}
+                      src={
+                        "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                        place.photos[0]
+                      }
                       alt="preview-image"
                       className="rounded-2xl object-cover"
                     />

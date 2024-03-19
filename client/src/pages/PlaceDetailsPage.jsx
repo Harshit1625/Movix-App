@@ -70,14 +70,17 @@ const PlaceDetailsPage = () => {
         >
           Go Back
         </button>
-        <div  className="lg:grid lg:grid-cols-2">
+        <div className="lg:grid lg:grid-cols-2">
           {place?.photos.length > 0 &&
             place?.photos.map((photo) => {
               return (
                 <div className="p-4 ">
                   <img
                     className=" w-[100vw] h-[80vh] object-cover"
-                    src={"http://localhost:4000/uploads/" + photo}
+                    src={
+                      "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                      photo
+                    }
                     alt=""
                   />
                 </div>
@@ -160,7 +163,10 @@ const PlaceDetailsPage = () => {
                 <div>
                   <img
                     className="aspect-square object-cover mt-1 rounded-l-2xl lg:h-[127vh] w-[100vw]"
-                    src={"http://localhost:4000/uploads/" + place?.photos?.[0]}
+                    src={
+                      "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                      place?.photos?.[0]
+                    }
                     alt=""
                   />
                 </div>
@@ -170,14 +176,20 @@ const PlaceDetailsPage = () => {
               {place?.photos?.[1] && (
                 <img
                   className="aspect-square object-cover rounded-tr-2xl"
-                  src={"http://localhost:4000/uploads/" + place?.photos?.[1]}
+                  src={
+                    "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                    place?.photos?.[1]
+                  }
                   alt=""
                 />
               )}
               {place?.photos?.[2] && (
                 <img
                   className="mt-1 aspect-square object-cover rounded-br-2xl"
-                  src={"http://localhost:4000/uploads/" + place?.photos?.[2]}
+                  src={
+                    "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                    place?.photos?.[2]
+                  }
                   alt=""
                 />
               )}

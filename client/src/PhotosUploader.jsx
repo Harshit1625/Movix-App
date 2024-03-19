@@ -38,7 +38,7 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
       });
   }
 
-  function removePhoto(ev , filename) {
+  function removePhoto(ev, filename) {
     ev.preventDefault();
     onChange([...addedPhotos.filter((photo) => photo !== filename)]);
   }
@@ -72,7 +72,9 @@ const PhotosUploader = ({ addedPhotos, onChange }) => {
             <div key={link} className="mr-2 h-32 flex relative">
               <img
                 className="rounded-md w-full object-cover position-center mt-2"
-                src={"http://localhost:4000/uploads/" + link}
+                src={
+                  "https://travel-booking-app-so1m.onrender.com/uploads/" + link
+                }
                 alt={link}
               />
               <button

@@ -5,7 +5,6 @@ import axios from "axios";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-
 const PlacesPage = () => {
   const [places, setPlaces] = useState([]);
 
@@ -59,17 +58,20 @@ const PlacesPage = () => {
           Add new place
         </Link>
       </div>
-      <div className="mt-4" id='places'>
+      <div className="mt-4" id="places">
         {places.length > 0 &&
           places.map((place) => {
             return (
-              <Link  to={"/account/places/" + place._id}>
+              <Link to={"/account/places/" + place._id}>
                 <div className="p-4 rounded-2xl flex bg-gray-200 h-[20vh] md:h-[32vh] sm:h-[27vh] mt-4">
                   <div className="h-32  bg-gray-300  bg-gray-300 ">
                     {place.photos.length > 0 && (
                       <img
                         className="object-cover w-[80vw] lg:h-[30vh] lg:w-[30vw] lg:object-cover"
-                        src={"http://localhost:4000/uploads/" + place.photos[0]}
+                        src={
+                          "https://travel-booking-app-so1m.onrender.com/uploads/" +
+                          place.photos[0]
+                        }
                         alt="preview"
                       />
                     )}
