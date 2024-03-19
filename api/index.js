@@ -29,9 +29,9 @@ app.use(
   cors({
     credentials: true,
     // origin: "http://localhost:5173",
-    origin: "https://travelbooking-app.netlify.app/",
+    origin: "https://travelbooking-app.netlify.app",
   })
-);
+);cd
 
 app.get("/test", (req, res) => {
   res.json("test");
