@@ -31,7 +31,7 @@ app.use(
     // origin: "http://localhost:5173",
     origin: "https://travelbooking-app.netlify.app",
   })
-);cd
+)
 
 app.get("/test", (req, res) => {
   res.json("test");
