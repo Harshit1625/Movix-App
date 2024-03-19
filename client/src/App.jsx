@@ -13,7 +13,7 @@ import PlaceDetailsPage from "./pages/PlaceDetailsPage";
 import BookingsPage from "./pages/BookingsPage";
 import SearchPage from "./pages/SearchPage";
 
-axios.defaults.baseURL = "http://127.0.0.1:4000/";
+axios.defaults.baseURL = "https://travel-booking-app-so1m.onrender.com/";
 axios.defaults.withCredentials = true;
 
 function App() {
